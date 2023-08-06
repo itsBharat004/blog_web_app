@@ -45,6 +45,12 @@ console.log(data[0].heading)
   (wordsToShow!==-1)?setWordsToShow(-1)://increase text
   setWordsToShow(50);// decrese text
  } 
+ const RandomImg=()=>{
+
+  return Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
+
+}
+
   return (
     <div>
       <div className="SingleAritcalHeader">
@@ -93,9 +99,9 @@ console.log(data[0].heading)
       </div>
     
   <div className="MoreFromSiren">
-    <FilterStoriesData type={"type6"} id={Id+2} />       
-    <FilterStoriesData type={"type6"} id={Id+3} />       
-    <FilterStoriesData type={"type6"} id={Id+4} />       
+    <FilterStoriesData type={"type6"} id={RandomImg()} />       
+    <FilterStoriesData type={"type6"} id={RandomImg()} />       
+    <FilterStoriesData type={"type6"} id={RandomImg()} />       
      
   </div>
    
